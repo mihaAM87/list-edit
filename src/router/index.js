@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import Main from '../views/main.vue';
-import Edit from '../views/Edit/Edit.vue';
+// import Edit from '../views/Edit/Edit.vue';
 
 const routes = [
   {
@@ -11,8 +11,7 @@ const routes = [
   {
     path: '/edit/:content',
     name: 'Edit',
-    // component: () => import('../views/Edit/Edit.vue'),
-    component: Edit,
+    component: () => import('../views/Edit/Edit.vue'),
   },
 ];
 
